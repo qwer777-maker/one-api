@@ -3,7 +3,7 @@ name: Publish Docker image
 on:
   push:
     tags:
-      - 'v*.*.*'
+      - 'v0.6.11-preview.7'
   workflow_dispatch:
     inputs:
       name:
