@@ -77,3 +77,21 @@ jobs:
           name: bin
           # A file, directory or wildcard pattern that describes what to upload
           path: "bin.zip"
+
+      # 上传文件
+      - name: Upload
+        uses: actions/upload-artifact@v4
+        with:
+          # Artifact name
+          name: bin1
+          # A file, directory or wildcard pattern that describes what to upload
+          path: "bin1.zip"
+          
+      # 上传文件
+      - name: Upload
+        uses: actions/upload-artifact@v4
+        with:
+          # Artifact name
+          name: bin2
+          # A file, directory or wildcard pattern that describes what to upload
+          path: "bin2.zip"
