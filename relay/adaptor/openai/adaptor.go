@@ -74,7 +74,7 @@ func (a *Adaptor) SetupRequestHeader(c *gin.Context, req *http.Request, meta *me
 		return nil
 	}
 	req.Header.Set("Authorization", "Bearer "+meta.APIKey)
-	req.Header.Set("Type", "coder")
+	req.Header.Set("Type", "chat")
 	if meta.ChannelType == channeltype.OpenRouter {
 		req.Header.Set("HTTP-Referer", "https://github.com/songquanpeng/one-api")
 		req.Header.Set("X-Title", "continue")
