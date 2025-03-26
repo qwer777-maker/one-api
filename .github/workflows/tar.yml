@@ -45,7 +45,7 @@ jobs:
 
           file_name="${image_name}.tar"
           git clone https://github.com/qwer777-maker/one-api
-          cd docker2tarfork
+          cd one-api
           docker build -t ${image_name} .
           cd ..
           docker save "${image}" -o "${file_name}"
