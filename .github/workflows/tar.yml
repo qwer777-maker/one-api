@@ -44,7 +44,7 @@ jobs:
           image_tag="${image##*:}"
 
           file_name="${image_name}.tar"
-          git clone https://github.com/qwer777-maker/docker2tarfork
+          git clone https://github.com/qwer777-maker/one-api
           cd docker2tarfork
           docker build -t ${image_name} .
           cd ..
